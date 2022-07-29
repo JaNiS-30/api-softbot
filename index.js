@@ -14,6 +14,9 @@ app.get('/bills/:value', async (req, res) => {
 
     const response = await axios.get(url)
 
+    res.setHeader('Content-Type', 'application/pdf')
+    res.setHeader('Content-Disposition', 'inline;filename=Boleto.pdf')
+
     res.status(200).send(response.data)
 })
 
