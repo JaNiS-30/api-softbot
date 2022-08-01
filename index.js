@@ -25,7 +25,7 @@ app.get('/projects/:id', async (req, res) => {
         }
     });
 
-    if(!vazio) res.status(404).send("Não há projetos")
+    if(vazio) res.status(404).send("Não há projetos")
     res.status(200).send(response)
 })
 
