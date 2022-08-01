@@ -25,7 +25,7 @@ app.get('/login/:id/', async (req, res) => {
 
     let options = {
         headers: {
-            'Authorization': req.headers.Authorization,
+            'Authorization': req.headers.authorization,
             'Content-Type': 'application/json'
         }
     }
