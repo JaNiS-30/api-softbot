@@ -13,15 +13,19 @@ app.get('/projects/:id', async (req, res) => {
 
     let response = []
 
+    let vazio = true
+
     let result = await fs.readFileSync("./projects.json", { encoding: "utf-8" })
     result = JSON.parse(result)
 
     result.projects.forEach(element => {
         if (element.idcliente == req.params.id) {
             response.push(element)
+            vazio = false
         }
     });
 
+    if(!vazio) res.status(404).send("Não há projetos")
     res.status(200).send(response)
 })
 
