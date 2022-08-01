@@ -1,0 +1,43 @@
+{
+    "projects": [
+        {
+            "idcliente": 751,
+            "projectname": "App Clarabóia Virtual",
+            "step": "deploy em PRD",
+            "documentation": "https://dev.azure.com/12345",
+            "deliverydate": "05/10/2022",
+            "manger": "João Pedro da Silva",
+            "email": "jp@soft.com.br",
+            "mobilephone": "5199999-9999",
+            "portion": "6 de 24",
+            "value": "R$ 500,00",
+            "duedate": "15/06/2022"
+        },
+        {
+            "idcliente": 751,
+            "projectname": "Backoffice Clarabóia Virtual",
+            "step": "discovery",
+            "documentation": "https://dev.azure.com/12345",
+            "deliverydate": "05/11/2022",
+            "manger": "Maria da Silva",
+            "email": "maria@soft.com.br",
+            "mobilephone": "5199999-9999",
+            "portion": "1 de 1",
+            "value": "R$ 50.000,00",
+            "duedate": "22/06/2022"
+        },
+        {
+            "idcliente": 801,
+            "projectname": "App Janelas Virtual",
+            "step": "discovery",
+            "documentation": "https://dev.azure.com/12345",
+            "deliverydate": "10/11/2022",
+            "manger": "Mariazinha da Silva",
+            "email": "maria@soft.com.br",
+            "mobilephone": "5199999-9999",
+            "portion": "1 de 12",
+            "value": "R$ 1.000,00",
+            "duedate": "20/06/2022"
+        }
+    ]
+}
