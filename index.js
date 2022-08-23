@@ -25,7 +25,7 @@ app.get('/projects/:id', async (req, res) => {
         }
     });
 
-    if(vazio) res.status(404).send("Não há projetos")
+    if (vazio) res.status(404).send("Não há projetos")
     else res.status(200).send(response)
 })
 
@@ -38,9 +38,16 @@ app.get('/login/:id', async (req, res) => {
         }
     }
 
-    let url = `https://api.hubapi.com/crm/v3/objects/contacts/${req.params.id}?properties=mobilephone,email,cpf_ou_cnpj,projeto,firstname,lastname,jobtitle`
+    let resp
 
-    let response = await axios.get(url, options)
+    try {
+        let url = `https://api.hubapi.com/crm/v3/objects/contacts/${req.params.id}?properties=mobilephone,email,cpf_ou_cnpj,projeto,firstname,lastname,jobtitle`
+        resp = await axios.get(url, options)
+    } catch {
+        res.status(404).send("Ocorreu um erro!")
+    }
+    
+    if (resp !== undefined && resp.status === 200) res.status(200).send(resp.data)
 
-    res.status(200).send(response.data)
+
 })
