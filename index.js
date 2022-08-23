@@ -29,7 +29,7 @@ app.get('/projects/:id', async (req, res) => {
     else res.status(200).send(response)
 })
 
-app.get('/login/:id/', async (req, res) => {
+app.get('/login/:id', async (req, res) => {
 
     let options = {
         headers: {
