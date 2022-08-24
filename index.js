@@ -43,9 +43,10 @@ app.get('/login/:id', async (req, res) => {
     try {
         let url = `https://api.hubapi.com/crm/v3/objects/contacts/${req.params.id}?properties=mobilephone,email,cpf_ou_cnpj,projeto,firstname,lastname,jobtitle`
         resp = await axios.get(url, options)
-    } catch {
-        res.status(404).send("Ocorreu um erro!")
+    } catch (error) {
+        res.status(404).send(`Ocorreu um erro: ${error.response.statusText}`)
     }
+
     
     if (resp !== undefined && resp.status === 200) res.status(200).send(resp.data)
 
