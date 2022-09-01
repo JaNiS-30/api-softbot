@@ -1,6 +1,6 @@
 const express = require('express')
 const axios = require('axios')
-const fs = require('fs');
+const fs = require('fs')
 const app = express()
 
 app.use(express.urlencoded({ extended: true }))
@@ -46,9 +46,7 @@ app.get('/login/:id', async (req, res) => {
     } catch (error) {
         res.status(404).send(`Ocorreu um erro: ${error.response.statusText}`)
     }
-
     
     if (resp !== undefined && resp.status === 200) res.status(200).send(resp.data)
-
 
 })

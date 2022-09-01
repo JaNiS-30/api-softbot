@@ -1,9 +1,9 @@
 {
     "projects": [
         {
-            "idcliente": 751,
+            "idcliente": 1201,
             "projectname": "App Clarabóia Virtual",
-            "step": "deploy em PRD",
+            "step": "Deploy em PRD",
             "documentation": "https://dev.azure.com/12345",
             "deliverydate": "05/10/2022",
             "manager": "João Pedro da Silva",
@@ -14,7 +14,7 @@
             "duedate": "15/06/2022"
         },
         {
-            "idcliente": 751,
+            "idcliente": 1201,
             "projectname": "Backoffice Clarabóia Virtual",
             "step": "discovery",
             "documentation": "https://dev.azure.com/12345",
@@ -27,9 +27,9 @@
             "duedate": "22/06/2022"
         },
         {
-            "idcliente": 801,
+            "idcliente": 1151,
             "projectname": "App Janelas Virtual",
-            "step": "discovery",
+            "step": "Discovery",
             "documentation": "https://dev.azure.com/12345",
             "deliverydate": "10/11/2022",
             "manager": "Mariazinha da Silva",
@@ -40,7 +40,7 @@
             "duedate": "20/06/2022"
         },
         {
-            "idcliente": 951,
+            "idcliente": 1251,
             "projectname": "App Clarabóia Virtual",
             "step": "deploy em PRD",
             "documentation": "https://dev.azure.com/12345",
@@ -53,9 +53,9 @@
             "duedate": "15/06/2022"
         },
         {
-            "idcliente": 951,
+            "idcliente": 1251,
             "projectname": "Backoffice Clarabóia Virtual",
-            "step": "discovery",
+            "step": "Discovery",
             "documentation": "https://dev.azure.com/12345",
             "deliverydate": "05/11/2022",
             "manager": "Maria da Silva",
@@ -66,9 +66,9 @@
             "duedate": "22/06/2022"
         },
         {
-            "idcliente": 951,
+            "idcliente": 1251,
             "projectname": "App Janelas Virtual",
-            "step": "discovery",
+            "step": "Discovery",
             "documentation": "https://dev.azure.com/12345",
             "deliverydate": "10/11/2022",
             "manager": "Mariazinha da Silva",
