@@ -16,7 +16,7 @@
         {
             "idcliente": 1201,
             "projectname": "Backoffice Clarabóia Virtual",
-            "step": "discovery",
+            "step": "Discovery",
             "documentation": "https://dev.azure.com/12345",
             "deliverydate": "05/11/2022",
             "manager": "Maria da Silva",
@@ -42,7 +42,7 @@
         {
             "idcliente": 1251,
             "projectname": "App Clarabóia Virtual",
-            "step": "deploy em PRD",
+            "step": "Deploy em PRD",
             "documentation": "https://dev.azure.com/12345",
             "deliverydate": "05/10/2022",
             "manager": "João Pedro da Silva",
